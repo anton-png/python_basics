@@ -19,7 +19,7 @@ Process finished with exit code 0
 """
 
 
-def divide(x, y):
+def divide(*args):
     """
     divide x by y
     :param int|float x: number
@@ -27,7 +27,7 @@ def divide(x, y):
     :return: x / y
     """
     try:
-        return x / y
+        return args[0] / args[1]
     except ZeroDivisionError:
         return 'Вы что? Пытаетесь делить на 0!'
 

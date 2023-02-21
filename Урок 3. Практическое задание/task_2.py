@@ -10,7 +10,7 @@ email: jackie@gmail.com, телефон: 01005321456
 """
 
 
-def user_info(name, surname, year, city, email, phone):
+def user_info(**kvargs):
     """
     Displaying user data in one line
     :param str name: Username
@@ -21,6 +21,12 @@ def user_info(name, surname, year, city, email, phone):
     :param str phone: Phone
     :return: user data string
     """
+    name = kvargs.get("name")
+    surname = kvargs.get("surname")
+    year = kvargs.get("year")
+    city = kvargs.get("city")
+    email = kvargs.get("email")
+    phone = kvargs.get("phone")
     return f"{name} {surname} {year} года рождения, проживает в городе {city}, email: {email}, телефон: {phone}"
 
 
