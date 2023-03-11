@@ -17,3 +17,21 @@ Process finished with exit code 0
 
 Process finished with exit code 0
 """
+
+
+def divide(*args):
+    """
+    divide x by y
+    :param int|float x: number
+    :param int|float y: number
+    :return: x / y
+    """
+    try:
+        return args[0] / args[1]
+    except ZeroDivisionError:
+        return 'Вы что? Пытаетесь делить на 0!'
+
+
+a = float(input('Введите первое число: '))
+b = float(input('Введите второе число: '))
+print(divide(a, b))
