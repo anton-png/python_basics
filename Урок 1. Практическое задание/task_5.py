@@ -18,3 +18,15 @@
 Введите численность сотрудников фирмы: 10
 Прибыль фирмы в расчете на одного сотрудника = 50.0
 """
+
+p = input('Your profit:')
+lo = input('Your loss:')
+if p.isdigit() and lo.isdigit():
+    p = int(p)
+    lo = int(lo)
+    if p > lo:
+        print('profit > loss')
+    elif p == lo:
+        print('profit = loss')
+    else:
+        print('profit < loss')
