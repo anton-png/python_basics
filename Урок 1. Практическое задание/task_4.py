@@ -10,3 +10,14 @@
 Ведите целое положительное число: 123456789
 Самая большая цифра в числе: 9
 """
+
+n = input('Enter number:')
+if n.isdigit():
+    i = 0
+    n_max = '0'
+    n_list = list(n)
+    while i < len(n_list):
+        if int(n_list[i]) > int(n_max):
+            n_max = n_list[i]
+        i += 1
+    print(f"more number: {n_max}")

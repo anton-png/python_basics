@@ -9,3 +9,13 @@
 Введите время в секундах: 3600
 Время в формате ч:м:с - 1.0 : 60.0 : 3600
 """
+
+s = input('Enter seconds:')
+
+if s.isdigit() and int(s) > 0:
+    s = int(s)
+    if s < 86400:
+        h = int(s / 3600)
+        m = int((s - h * 3600) / 60)
+        s = (s - h * 3600) - (m * 60)
+        print("{}:{}:{}".format(h, m, s))

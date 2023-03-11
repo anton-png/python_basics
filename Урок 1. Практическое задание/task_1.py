@@ -11,3 +11,13 @@
 Введите ваш возраст: 45
 Ваши данные для входа в аккаунт: имя - Василий, пароль - vas, возраст - 45
 """
+
+name = 'Игорь'
+money = 1
+
+print("%s инвестировал %d доллар(ов)!" % (name, money))
+
+n = input('Enter your name:')
+m = input('Enter amount money:')
+
+print("$%s user money: %s" % (m, n))
